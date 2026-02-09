@@ -1,11 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saif Syed | Portfolio</title>
+  <meta name="description" content="Single-page personal portfolio with projects, skills, and contact info." />
+
+  <!-- Font Awesome (bonus icons) -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Add your HTML content here -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand-mark">SS</span>
+        <span class="brand-text">Saif Syed</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#reflection">Reflections</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="btn btn-ghost" href="https://github.com/SaifSyed786/01-prj-portfolio" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i> Repo
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="pill">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          HTML/CSS • AI-assisted • GitHub Pages
+        </p>
+
+        <h1>
+          Saif Syed
+          <span class="accent">Portfolio</span>
+        </h1>
+
+        <p class="hero-sub">
+          I build clean, responsive web pages with semantic HTML, consistent CSS, and a deployment-first workflow.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+        </div>
+
+        <div class="hero-meta">
+          <a href="mailto:saif.syed@my.utsa.edu"><i class="fa-solid fa-envelope"></i> saif.syed@my.utsa.edu</a>
+          <span class="dot">•</span>
+          <a href="https://www.linkedin.com/in/tahoora-nai-1ba611329/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Profile card">
+        <img class="avatar" src="img/me.jpg" alt="Portrait photo" />
+        <h2>Saif Syed</h2>
+        <p class="muted">Front-end fundamentals • Clean layout • Practical execution</p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">Week 2</div>
+            <div class="stat-label">Portfolio</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Live</div>
+            <div class="stat-label">Deployment</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">+AI</div>
+            <div class="stat-label">Workflow</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-lead">
+          I’m developing front-end skills with a focus on semantic HTML, responsive CSS, and clear UI structure.
+          I use AI to speed up drafting/debugging, then validate changes by testing and iterating.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3><i class="fa-solid fa-bullseye"></i> Focus</h3>
+            <p>Readable structure, consistent spacing, and mobile-first layouts.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Workflow</h3>
+            <p>Draft → test → refine → deploy. If it breaks on mobile, it’s not done.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-lead">Core tools I’m using in this course.</p>
+
+        <div class="skills">
+          <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+          <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript (basic)</span></div>
+          <div class="skill"><i class="fa-brands fa-git-alt"></i><span>Git / GitHub</span></div>
+          <div class="skill"><i class="fa-solid fa-mobile-screen-button"></i><span>Responsive Design</span></div>
+          <div class="skill"><i class="fa-solid fa-robot"></i><span>AI-assisted Dev</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lead">Links to my work (add more projects over time).</p>
+
+        <div class="projects-grid">
+          <article class="project card">
+            <img class="project-img" src="img/laptop.jpg" alt="Laptop image representing a web project" />
+            <div class="project-top">
+              <h3>Portfolio Website</h3>
+              <span class="tag tag-live"><i class="fa-solid fa-check"></i> Live</span>
+            </div>
+            <p class="muted">Single-page portfolio built with HTML/CSS and deployed with GitHub Pages.</p>
+            <div class="project-links">
+              <a class="btn btn-small" href="https://saifsyed786.github.io/01-prj-portfolio/" target="_blank" rel="noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              </a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/SaifSyed786/01-prj-portfolio" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <img class="project-img" src="img/hero-bg.jpg" alt="Abstract background image" />
+            <div class="project-top">
+              <h3>Next Project</h3>
+              <span class="tag tag-soon"><i class="fa-solid fa-hourglass"></i> Coming soon</span>
+            </div>
+            <p class="muted">Placeholder for your next assignment/project.</p>
+            <div class="project-links">
+              <a class="btn btn-small btn-ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="reflection">
+      <div class="container">
+        <h2 class="section-title">Reflections</h2>
+        <p class="section-lead">Replace the text below with your own answers (required for Week 2).</p>
+
+        <div class="card">
+          <h3>Reflection: Building Websites with AI</h3>
+          <p class="muted">[Write your answer here]</p>
+        </div>
+
+        <div class="card spacer">
+          <h3>Reflection: Interview Question</h3>
+          <p class="muted">[Write your answer here]</p>
+        </div>
+
+        <div class="card spacer">
+          <h3>Reflection: LinkedIn Post</h3>
+          <p class="muted">[Write your answer here]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Simple and direct.</p>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:saif.syed@my.utsa.edu">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">saif.syed@my.utsa.edu</div>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://github.com/SaifSyed786/01-prj-portfolio" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <div class="contact-label">GitHub Repo</div>
+              <div class="contact-value">01-prj-portfolio</div>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/tahoora-nai-1ba611329/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Profile</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Saif Syed</span>
+      <span class="muted">Built with HTML/CSS • Deployed on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      links.classList.toggle("nav-links-open");
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
